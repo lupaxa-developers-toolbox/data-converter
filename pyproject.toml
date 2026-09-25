@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "lupaxa-data-converter"
 dynamic = ["version"]
 description = "Python library that converts mappings between JSON, JSON5, XML, YAML, and TOML."
-readme = "README-PYPI.md"
+readme = "README.md"
 license = { file = "LICENCE" }
 requires-python = ">=3.10"
 
@@ -69,7 +69,6 @@ path = "src/lupaxa/data_converter/version.py"
 include = [
   "src/**",
   "README.md",
-  "README-PYPI.md",
   "LICENCE",
 ]
 

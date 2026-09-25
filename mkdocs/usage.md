@@ -1,6 +1,6 @@
 # Usage
 
-## Load a value
+## Load a Value
 
 `DataConverter` accepts a dictionary or a document string. Set `data_type`
 to match the input. The name is case-insensitive. Every source is stored
@@ -30,7 +30,7 @@ JSON, JSON5, YAML, and TOML documents must be mappings. Arrays and scalars raise
 `DataConverterError`. The loaded mapping is on `converter.data`. XML
 keeps the original root on `converter.root_tag`.
 
-## Convert the loaded value
+## Convert the Loaded Value
 
 Once constructed, call the matching `to_*` method. Identity conversions
 are supported — a JSON source can call `to_json()`, and so on.
@@ -49,7 +49,7 @@ Each method returns a string. `to_xml()` wraps the mapping in `root_tag`
 (the XML source root, or `root` for other sources). Pass `root_tag` to
 override it.
 
-## XML details
+## XML Details
 
 Child elements with the same tag become a list. Attributes are stored as
 `@name` keys and written back as attributes. A list value is emitted as
@@ -78,7 +78,7 @@ except DataConverterError as exc:
     print(exc)
 ```
 
-## Round-trip helpers
+## Round-Trip Helpers
 
 These class methods convert without constructing an instance first:
 

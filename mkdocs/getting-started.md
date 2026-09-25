@@ -1,4 +1,4 @@
-# Getting started
+# Getting Started
 
 ## Requirements
 
@@ -25,7 +25,7 @@ The PyPI name is `lupaxa-data-converter`. The import path is
 This is a library only. There is no console script and no
 `python -m lupaxa.data_converter` entry point.
 
-### From source (development)
+### From Source (Development)
 
 Editable install with dev extras (includes the MkDocs pins):
 
@@ -41,7 +41,7 @@ After makefile-skills are installed:
 make mkdocs-serve
 ```
 
-## First conversion
+## First Conversion
 
 ```python
 from lupaxa.data_converter import DataConverter
@@ -60,7 +60,7 @@ Load a document string by passing `data_type` as `json`, `json5`, `xml`,
 `yaml`, or `toml`. The value is always stored as a dictionary, then any
 `to_*` method can write it out.
 
-## Makefile helpers
+## Makefile Helpers
 
 ```bash
 make init                 # clone makefile-skills into .makefiles/

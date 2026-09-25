@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center">data-converter</h1>
+<h1 align="center">Data Converter</h1>
 
 Python library that loads JSON, JSON5, XML, YAML, or TOML into a
 dictionary, then writes any of those formats.

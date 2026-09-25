@@ -1,6 +1,6 @@
 # Examples
 
-## Dictionary to every text format
+## Dictionary to Every Text Format
 
 ```python
 from lupaxa.data_converter import DataConverter
@@ -15,7 +15,7 @@ print(converter.to_yaml())
 print(converter.to_toml())
 ```
 
-## JSON string to XML and YAML
+## JSON String to XML and YAML
 
 ```python
 converter = DataConverter('{"id": 1, "ok": true}', data_type="json")
@@ -23,28 +23,28 @@ print(converter.to_xml())
 print(converter.to_yaml())
 ```
 
-## JSON5 to TOML via the dict hub
+## JSON5 to TOML Via the Dict Hub
 
 ```python
 converter = DataConverter("{ id: 1, ok: true, }", data_type="json5")
 print(converter.to_toml())
 ```
 
-## YAML string to a dictionary
+## YAML String to a Dictionary
 
 ```python
 data = DataConverter.yaml_to_dict("name: Lupaxa\nactive: true\n")
 print(data["name"])
 ```
 
-## XML string to JSON
+## XML String to JSON
 
 ```python
 print(DataConverter.xml_to_json("<root><id>1</id></root>"))
 # {"id": "1"}
 ```
 
-## Dictionary to XML with a custom root
+## Dictionary to XML With a Custom Root
 
 ```python
 print(DataConverter.dict_to_xml({"id": 1}, root_tag="item"))
