@@ -1,4 +1,4 @@
-# markdownlint — MkDocs / Material (Lupaxa defaults, short form)
+# markdownlint — Lupaxa defaults, short form
 default: true
 
 MD003:
@@ -25,14 +25,14 @@ MD026:
 
 MD029: false
 
-# One space after simple markers; three for multi-line Material card items.
+# One space after simple markers; three for multi-line list items.
 MD030:
   ul_single: 1
   ol_single: 1
   ul_multi: 3
   ol_multi: 3
 
-# HTML heroes, cards, and catalogue markup.
+# README HTML (org logo / footer).
 MD033: false
 
 MD034: false
@@ -45,11 +45,9 @@ MD036: false
 
 MD040: true
 
-# Pages may start with front matter / HTML heroes.
+# README starts with HTML, not an ATX heading.
 MD041: false
 
-# Allow fenced blocks nested under Material tabs (===) which must be indented.
-# Prefer fenced ``` / ~~~ code in docs; do not use 4-space indented code blocks.
 MD046: false
 
 MD048:

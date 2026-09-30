@@ -41,8 +41,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://data-converter.thelupaxaproject.org/"
-Documentation = "https://data-converter.thelupaxaproject.org/"
+Homepage = "https://github.com/lupaxa-developers-toolbox/data-converter"
 Repository = "https://github.com/lupaxa-developers-toolbox/data-converter"
 Issues = "https://github.com/lupaxa-developers-toolbox/data-converter/issues"
 
@@ -54,8 +53,6 @@ dev = [
   "mypy>=1.12.0",
   "hatch>=1.12.0",
   "bump-my-version>=1.2.0",
-  "mkdocs==1.6.1",
-  "mkdocs-material==9.7.7",
 ]
 test = [
   "pytest>=8.0",
